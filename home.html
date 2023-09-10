@@ -1,55 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Temperature Converter</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bandila Tejaswini - Web Developer Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Temperature Converter</h1>
+        <h1>Bandila Tejaswini</h1>
+        <h2>Web Developer</h2>
     </header>
 
-    <section>
-        <h2>Celsius to Fahrenheit</h2>
-        <div>
-            <label for="celsius-input">Celsius:</label>
-            <input type="number" id="celsius-input">
-        </div>
-        <button onclick="convertToCelsius()">Convert</button>
-        <div id="fahrenheit-output"></div>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello, I'm Bandila Tejaswini, a passionate web developer with a knack for creating interactive and user-friendly websites. My journey in web development began with a curiosity for crafting digital experiences, and it has grown into a professional career where I bring ideas to life through code.
+        </p>
     </section>
 
-    <section>
-        <h2>Fahrenheit to Celsius</h2>
-        <div>
-            <label for="fahrenheit-input">Fahrenheit:</label>
-            <input type="number" id="fahrenheit-input">
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Temperature Converter</h3>
+            <p>A simple temperature converter built using HTML, CSS, and JavaScript.</p>
         </div>
-        <button onclick="convertToFahrenheit()">Convert</button>
-        <div id="celsius-output"></div>
+        <div class="project">
+            <h3>Netflix Homepage</h3>
+            <p>A recreation of the Netflix homepage using HTML, CSS, and JavaScript.</p>
+        </div>
     </section>
 
-    <script>
-        function convertToCelsius() {
-    var celsiusInput = document.getElementById("celsius-input");
-    var fahrenheitOutput = document.getElementById("fahrenheit-output");
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            Feel free to get in touch with me. You can reach me through:
+        </p>
+        <ul>
+            <li>Phone: <a href="tel:+919346249394">+91-9346249394</a></li>
+            <li>Email: <a href="mailto:tejaswinibandila@gmail.com">tejaswinibandila@gmail.com</a></li>
+        </ul>
+    </section>
 
-    var celsius = parseFloat(celsiusInput.value);
-    var fahrenheit = (celsius * 9/5) + 32;
-
-    fahrenheitOutput.innerText = "Fahrenheit: " + fahrenheit.toFixed(2) + " °F";
-}
-
-function convertToFahrenheit() {
-    var fahrenheitInput = document.getElementById("fahrenheit-input");
-    var celsiusOutput = document.getElementById("celsius-output");
-
-    var fahrenheit = parseFloat(fahrenheitInput.value);
-    var celsius = (fahrenheit - 32) * 5/9;
-
-    celsiusOutput.innerText = "Celsius: " + celsius.toFixed(2) + " °C";
-}
-
-    </script>
+    <footer>
+        <p>&copy; 2023 Bandila Tejaswini</p>
+    </footer>
 </body>
 </html>
